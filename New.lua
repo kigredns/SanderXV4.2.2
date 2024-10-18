@@ -124,9 +124,9 @@ end)
 -- Wywołanie skryptów po kliknięciu ImageButton:
 
 ImageButton.MouseButton1Click:Connect(function()
-     -- Replace with your script URL
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/sanderxvipSS.lua'))()
 end)
 
 ImageButton_2.MouseButton1Click:Connect(function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/Skrypt2'))() -- Replace with your second script URL
+    loadstring(game:HttpGet('https://pastebin.com/raw/Skrypt2'))()
 end)
