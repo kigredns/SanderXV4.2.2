@@ -14,10 +14,10 @@ local OrionLib = {
 		Default = {
 			Main = Color3.fromRGB(0, 0, 0),
 			Second = Color3.fromRGB(0, 0, 0),
-			Stroke = Color3.fromRGB(51, 255, 255),
+			Stroke = Color3.fromRGB(0, 255, 255),
 			Divider = Color3.fromRGB(60, 60, 60),
-			Text = Color3.fromRGB(51, 255, 255),
-			TextDark = Color3.fromRGB(51, 255, 255)
+			Text = Color3.fromRGB(0, 255, 255),
+			TextDark = Color3.fromRGB(0, 255, 255)
 		}
 	},
 	SelectedTheme = "Default",
@@ -346,7 +346,7 @@ end)
 CreateElement("Label", function(Text, TextSize, Transparency)
 	local Label = Create("TextLabel", {
 		Text = Text or "",
-		TextColor3 = Color3.fromRGB(51, 255, 255),
+		TextColor3 = Color3.fromRGB(0, 255, 255),
 		TextTransparency = Transparency or 0,
 		TextSize = TextSize or 15,
 		Font = Enum.Font.FredokaOne,
@@ -390,11 +390,11 @@ function OrionLib:MakeNotification(NotificationConfig)
 			Position = UDim2.new(1, -55, 0, 0),
 			AutomaticSize = Enum.AutomaticSize.Y
 		}), {
-			MakeElement("Stroke", Color3.fromRGB(51, 255, 255), 1.2),
+			MakeElement("Stroke", Color3.fromRGB(0, 255, 255), 1.2),
 			MakeElement("Padding", 12, 12, 12, 12),
 			SetProps(MakeElement("Image", NotificationConfig.Image), {
 				Size = UDim2.new(0, 20, 0, 20),
-				ImageColor3 = Color3.fromRGB(51, 255, 255),
+				ImageColor3 = Color3.fromRGB(0, 255, 255),
 				Name = "Icon"
 			}),
 			SetProps(MakeElement("Label", NotificationConfig.Name, 15), {
@@ -409,7 +409,7 @@ function OrionLib:MakeNotification(NotificationConfig)
 				Font = Enum.Font.FredokaOne,
 				Name = "Content",
 				AutomaticSize = Enum.AutomaticSize.Y,
-				TextColor3 = Color3.fromRGB(51, 255, 255),
+				TextColor3 = Color3.fromRGB(0, 255, 255),
 				TextWrapped = true
 			})
 		})
