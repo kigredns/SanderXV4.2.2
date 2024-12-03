@@ -60,7 +60,7 @@ local ImageLabel_4 = Instance.new("ImageLabel")
 local copylink1 = createTextButton(Frame, UDim2.new(0.743, 0, 0.481, 0), UDim2.new(0, 90, 0, 40), "Click Here To Copy Link")
 local copylink2 = createTextButton(Frame, UDim2.new(0.743, 0, 0.767, 0), UDim2.new(0, 90, 0, 40), "Click Here To Copy Link")
 local ImageLabel_5 = Instance.new("ImageLabel")
-local copylink3 = createTextButton(Frame, UDim2.new(0.743, 0, 0.249, 0), UDim2.new(0, 90, 0, 40), "sanderdev got banned you have to join new discord")
+local copylink3 = createTextButton(Frame, UDim2.new(0.743, 0, 0.249, 0), UDim2.new(0, 90, 0, 40), "Click Here To Copy Link")
 
 -- Properties:
 
