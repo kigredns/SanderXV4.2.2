@@ -173,7 +173,7 @@ copylink2.MouseButton1Click:Connect(function()
 end)
 
 copylink3.MouseButton1Click:Connect(function()
-    local link3 = "https://discord.gg/jZvZUGbkAX"
+    local link3 = "https://www.roblox.com/pl/communities/35289663/Sander-X-Team#!/about"
     copyToClipboard(link3)  -- Copy link3 to clipboard
 end)
 
