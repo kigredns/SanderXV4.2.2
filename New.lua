@@ -40,7 +40,10 @@ local copyrobloxgroup = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
 local copyrobloxprofile = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-
+local ImageLabel_6 = Instance.new("ImageLabel")
+local UICorner_18 = Instance.new("UICorner")
+local copyshirtlink = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
 -- Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -336,6 +339,30 @@ copyrobloxprofile.TextSize = 14.000
 
 UICorner_17.Parent = copyrobloxprofile
 
+ImageLabel_6.Parent = Frame
+ImageLabel_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_6.BorderSizePixel = 0
+ImageLabel_6.Position = UDim2.new(0.356603771, 0, 0.656626523, 0)
+ImageLabel_6.Size = UDim2.new(0, 57, 0, 54)
+ImageLabel_6.Image = "rbxassetid://97843518275001"
+
+UICorner_18.Parent = ImageLabel_6
+
+copyshirtlink.Name = "copyshirtlink"
+copyshirtlink.Parent = Frame
+copyshirtlink.BackgroundColor3 = Color3.fromRGB(34, 255, 0)
+copyshirtlink.BorderColor3 = Color3.fromRGB(0, 0, 0)
+copyshirtlink.BorderSizePixel = 0
+copyshirtlink.Position = UDim2.new(0.490566045, 0, 0.686747015, 0)
+copyshirtlink.Size = UDim2.new(0, 42, 0, 32)
+copyshirtlink.Font = Enum.Font.SourceSansBold
+copyshirtlink.Text = "Copy"
+copyshirtlink.TextColor3 = Color3.fromRGB(0, 0, 0)
+copyshirtlink.TextSize = 14.000
+
+UICorner_19.Parent = copyshirtlink
+
 local function copyToClipboard(text)
     setclipboard(text)
 end
@@ -352,6 +379,10 @@ end)
 copyrobloxprofile.MouseButton1Click:Connect(function()
     local robloxProfileLink = "https://www.roblox.com/pl/users/3016844381/profile" 
     copyToClipboard(robloxProfileLink)
+end)
+copyshirtlink.MouseButton1Click:Connect(function()
+    local copyshirtlink = "https://www.roblox.com/pl/catalog/80680383943488/Sander-X-SanderDev-Shirt" 
+    copyToClipboard(copyshirtlink)
 end)
 
 executesanderxnormal.MouseButton1Click:Connect(function()
