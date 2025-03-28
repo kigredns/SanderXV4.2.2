@@ -108,7 +108,6 @@ Close.TextSize = 14.000
 UICorner_5.CornerRadius = UDim.new(1, 0)
 UICorner_5.Parent = Close
 
--- Funkcja, która pozwala przeciągać Frame
 local dragging = false
 local dragInput, mousePos, framePos
 
@@ -138,14 +137,13 @@ end)
 
 
 
--- Funkcja do zamknięcia GUI z animacją
 Close.MouseButton1Click:Connect(function()
     local goalClose = {}
-    goalClose.Position = UDim2.new(0.5, -265, 0.5, -166)  -- Możesz zmienić na pozycję poza ekranem
+    goalClose.Position = UDim2.new(0.5, -265, 0.5, -166) 
     local tweenClose = TweenService:Create(Frame, TweenInfo.new(0.5), goalClose)
     tweenClose:Play()
     tweenClose.Completed:Connect(function()
-        ScreenGui:Destroy()  -- Zniszczenie GUI po zakończeniu animacji
+        ScreenGui:Destroy()  
     end)
 end)
 
