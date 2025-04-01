@@ -388,5 +388,5 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.
 end)
 
 executesanderxvip.MouseButton1Click:Connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/New..lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/SanderXVip.lua'))()
 end)
