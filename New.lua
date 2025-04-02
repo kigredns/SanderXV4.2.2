@@ -366,7 +366,7 @@ local function copyToClipboard(text)
 end
 
 copydiscord.MouseButton1Click:Connect(function()
-    local discordLink = "https://discord.gg/w9N9a9NYY6" 
+    local discordLink = "https://discord.gg/PrYAhPA2xp" 
     copyToClipboard(discordLink)
 end)
 
