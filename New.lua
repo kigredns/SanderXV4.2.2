@@ -1,392 +1,562 @@
-local TweenService = game:GetService("TweenService")
-local UserInputService = game:GetService("UserInputService")
+local G2L = {};
 
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Frame1 = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local UICorner_3 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local UICorner_4 = Instance.new("UICorner")
-local Close = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local wlasciciel = Instance.new("TextLabel")
-local UICorner_6 = Instance.new("UICorner")
-local ImageLabel = Instance.new("ImageLabel")
-local ImageLabel_2 = Instance.new("ImageLabel")
-local TextLabel_3 = Instance.new("TextLabel")
-local UICorner_7 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
-local executesanderxnormal = Instance.new("ImageButton")
-local executesanderxvip = Instance.new("ImageButton")
-local ImageLabel_3 = Instance.new("ImageLabel")
-local UICorner_9 = Instance.new("UICorner")
-local copydiscord = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local TextLabel_5 = Instance.new("TextLabel")
-local UICorner_11 = Instance.new("UICorner")
-local ImageLabel_4 = Instance.new("ImageLabel")
-local UICorner_12 = Instance.new("UICorner")
-local ImageLabel_5 = Instance.new("ImageLabel")
-local UICorner_13 = Instance.new("UICorner")
-local TextLabel_6 = Instance.new("TextLabel")
-local UICorner_14 = Instance.new("UICorner")
-local TextLabel_7 = Instance.new("TextLabel")
-local UICorner_15 = Instance.new("UICorner")
-local copyrobloxgroup = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
-local copyrobloxprofile = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
-local ImageLabel_6 = Instance.new("ImageLabel")
-local UICorner_18 = Instance.new("UICorner")
-local copyshirtlink = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
--- Properties:
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.5, -265, 0.5, -166)  -- Ustawić GUI na środku ekranu
-Frame.Size = UDim2.new(0, 530, 0, 332)
+-- StarterGui.ScreenGui.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["2"]["Size"] = UDim2.new(0, 509, 0, 417);
+G2L["2"]["Position"] = UDim2.new(0.26546, 0, 0.13734, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
-UICorner.CornerRadius = UDim.new(0, 12)
-UICorner.Parent = Frame
 
-Frame1.Name = "Frame1"
-Frame1.Parent = Frame
-Frame1.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Frame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame1.BorderSizePixel = 0
-Frame1.Size = UDim2.new(0, 530, 0, 51)
+-- StarterGui.ScreenGui.Frame.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 10);
 
-UICorner_2.Parent = Frame1
 
-TextLabel.Parent = Frame1
-TextLabel.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 137, 0, 50)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Sander X"
-TextLabel.TextColor3 = Color3.fromRGB(0, 170, 255)
-TextLabel.TextSize = 38.000
+-- StarterGui.ScreenGui.Frame.UIStroke
+G2L["4"] = Instance.new("UIStroke", G2L["2"]);
+G2L["4"]["Thickness"] = 5;
+G2L["4"]["Color"] = Color3.fromRGB(41, 41, 41);
 
-UICorner_3.Parent = TextLabel
 
-TextLabel_2.Parent = Frame1
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.245283023, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 97, 0, 50)
-TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "PANEL"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 38.000
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["5"] = Instance.new("TextLabel", G2L["2"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 25;
+G2L["5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Size"] = UDim2.new(0, 200, 0, 51);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[Sander X Panel]];
+G2L["5"]["Position"] = UDim2.new(0.02167, 0, 0.00293, 0);
 
-UICorner_4.Parent = TextLabel_2
 
-Close.Name = "Close"
-Close.Parent = Frame
-Close.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Close.BorderSizePixel = 0
-Close.Position = UDim2.new(0.903773606, 0, 0.0210843366, 0)
-Close.Size = UDim2.new(0, 36, 0, 36)
-Close.Font = Enum.Font.SourceSans
-Close.Text = ""
-Close.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close.TextSize = 14.000
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["6"] = Instance.new("ImageButton", G2L["2"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Image"] = [[rbxassetid://11293981586]];
+G2L["6"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Position"] = UDim2.new(0.91928, 0, 0.0252, 0);
 
-UICorner_5.CornerRadius = UDim.new(1, 0)
-UICorner_5.Parent = Close
 
-local dragging = false
-local dragInput, mousePos, framePos
-
-Frame1.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        dragging = true
-        -- Zapisz początkową pozycję myszy
-        dragInput = input
-        mousePos = UserInputService:GetMouseLocation()
-        framePos = Frame.Position
-    end
-end)
-
-Frame1.InputChanged:Connect(function(input)
-    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-        -- Oblicz nową pozycję
-        local delta = UserInputService:GetMouseLocation() - mousePos
-        Frame.Position = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
-    end
-end)
-
-Frame1.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        dragging = false
-    end
-end)
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
 
 
 
-Close.MouseButton1Click:Connect(function()
-    local goalClose = {}
-    goalClose.Position = UDim2.new(0.5, -265, 0.5, -166) 
-    local tweenClose = TweenService:Create(Frame, TweenInfo.new(0.5), goalClose)
-    tweenClose:Play()
-    tweenClose.Completed:Connect(function()
-        ScreenGui:Destroy()  
-    end)
-end)
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["8"] = Instance.new("TextLabel", G2L["2"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 30;
+G2L["8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[Hello, username]];
+G2L["8"]["Position"] = UDim2.new(0.02167, 0, 0.10122, 0);
 
-wlasciciel.Name = "wlasciciel"
-wlasciciel.Parent = Frame
-wlasciciel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-wlasciciel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-wlasciciel.BorderSizePixel = 0
-wlasciciel.Position = UDim2.new(0, 0, 0.939759016, 0)
-wlasciciel.Size = UDim2.new(0, 145, 0, 20)
-wlasciciel.Font = Enum.Font.SourceSansBold
-wlasciciel.Text = "Developer : SanderDev"
-wlasciciel.TextColor3 = Color3.fromRGB(136, 1, 3)
-wlasciciel.TextSize = 14.000
 
-UICorner_6.Parent = wlasciciel
+-- StarterGui.ScreenGui.Frame.TextLabel.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
 
-ImageLabel.Parent = Frame
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.0301886797, 0, 0.262048185, 0)
-ImageLabel.Size = UDim2.new(0, 113, 0, 67)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=72230522732142"
 
-ImageLabel_2.Parent = Frame
-ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_2.BorderSizePixel = 0
-ImageLabel_2.Position = UDim2.new(0.0320754722, 0, 0.626506031, 0)
-ImageLabel_2.Size = UDim2.new(0, 113, 0, 67)
-ImageLabel_2.Image = "http://www.roblox.com/asset/?id=129095123808252"
 
-TextLabel_3.Parent = Frame
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.00754716992, 0, 0.171686754, 0)
-TextLabel_3.Size = UDim2.new(0, 141, 0, 25)
-TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Free Version"
-TextLabel_3.TextColor3 = Color3.fromRGB(238, 238, 238)
-TextLabel_3.TextSize = 23.000
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["a"] = Instance.new("TextLabel", G2L["2"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 20;
+G2L["a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[What would you like to do today?]];
+G2L["a"]["Position"] = UDim2.new(0.02167, 0, 0.16964, 0);
 
-UICorner_7.CornerRadius = UDim.new(0, 10)
-UICorner_7.Parent = TextLabel_3
 
-TextLabel_4.Parent = Frame
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.00377358496, 0, 0.527108431, 0)
-TextLabel_4.Size = UDim2.new(0, 141, 0, 25)
-TextLabel_4.Font = Enum.Font.SourceSansBold
-TextLabel_4.Text = "Paid Version"
-TextLabel_4.TextColor3 = Color3.fromRGB(238, 238, 238)
-TextLabel_4.TextSize = 23.000
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(74, 74, 110);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Copy Discord]];
+G2L["b"]["Position"] = UDim2.new(0.69952, 0, 0.02667, 0);
 
-UICorner_8.CornerRadius = UDim.new(0, 10)
-UICorner_8.Parent = TextLabel_4
 
-executesanderxnormal.Name = "executesanderxnormal"
-executesanderxnormal.Parent = Frame
-executesanderxnormal.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-executesanderxnormal.BorderColor3 = Color3.fromRGB(0, 0, 0)
-executesanderxnormal.BorderSizePixel = 0
-executesanderxnormal.Position = UDim2.new(0.273584902, 0, 0.304216862, 0)
-executesanderxnormal.Size = UDim2.new(0, 38, 0, 38)
-executesanderxnormal.Image = "http://www.roblox.com/asset/?id=106832160765446"
+-- StarterGui.ScreenGui.Frame.TextButton.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+G2L["c"]["CornerRadius"] = UDim.new(0, 15);
 
-executesanderxvip.Name = "executesanderxvip"
-executesanderxvip.Parent = Frame
-executesanderxvip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-executesanderxvip.BorderColor3 = Color3.fromRGB(0, 0, 0)
-executesanderxvip.BorderSizePixel = 0
-executesanderxvip.Position = UDim2.new(0.269811332, 0, 0.668674707, 0)
-executesanderxvip.Size = UDim2.new(0, 38, 0, 38)
-executesanderxvip.Image = "http://www.roblox.com/asset/?id=106832160765446"
 
-ImageLabel_3.Parent = Frame
-ImageLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_3.BorderSizePixel = 0
-ImageLabel_3.Position = UDim2.new(0.643396199, 0, 0.280120492, 0)
-ImageLabel_3.Size = UDim2.new(0, 120, 0, 54)
-ImageLabel_3.Image = "http://www.roblox.com/asset/?id=127373582777529"
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["b"]);
 
-UICorner_9.Parent = ImageLabel_3
 
-copydiscord.Name = "copydiscord"
-copydiscord.Parent = Frame
-copydiscord.BackgroundColor3 = Color3.fromRGB(34, 255, 0)
-copydiscord.BorderColor3 = Color3.fromRGB(0, 0, 0)
-copydiscord.BorderSizePixel = 0
-copydiscord.Position = UDim2.new(0.892452836, 0, 0.304216862, 0)
-copydiscord.Size = UDim2.new(0, 42, 0, 32)
-copydiscord.Font = Enum.Font.SourceSansBold
-copydiscord.Text = "Copy"
-copydiscord.TextColor3 = Color3.fromRGB(0, 0, 0)
-copydiscord.TextSize = 14.000
 
-UICorner_10.Parent = copydiscord
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["e"] = Instance.new("TextButton", G2L["2"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 235, 0, 180);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[]];
+G2L["e"]["Position"] = UDim2.new(0.02167, 0, 0.28753, 0);
 
-TextLabel_5.Parent = Frame
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(0.622641504, 0, 0.204819277, 0)
-TextLabel_5.Size = UDim2.new(0, 141, 0, 25)
-TextLabel_5.Font = Enum.Font.SourceSansBold
-TextLabel_5.Text = "Discord"
-TextLabel_5.TextColor3 = Color3.fromRGB(1, 39, 253)
-TextLabel_5.TextSize = 23.000
 
-UICorner_11.CornerRadius = UDim.new(0, 10)
-UICorner_11.Parent = TextLabel_5
+-- StarterGui.ScreenGui.Frame.TextButton.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
+G2L["f"]["CornerRadius"] = UDim.new(0, 10);
 
-ImageLabel_4.Parent = Frame
-ImageLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_4.BorderSizePixel = 0
-ImageLabel_4.Position = UDim2.new(0.643396199, 0, 0.527108431, 0)
-ImageLabel_4.Size = UDim2.new(0, 120, 0, 54)
-ImageLabel_4.Image = "http://www.roblox.com/asset/?id=76514650010922"
 
-UICorner_12.Parent = ImageLabel_4
+-- StarterGui.ScreenGui.Frame.TextButton.ImageLabel
+G2L["10"] = Instance.new("ImageLabel", G2L["e"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Image"] = [[rbxassetid://72230522732142]];
+G2L["10"]["Size"] = UDim2.new(0, 221, 0, 113);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Position"] = UDim2.new(0.03, 0, 0.027, 0);
 
-ImageLabel_5.Parent = Frame
-ImageLabel_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_5.BorderSizePixel = 0
-ImageLabel_5.Position = UDim2.new(0.643396199, 0, 0.777108431, 0)
-ImageLabel_5.Size = UDim2.new(0, 120, 0, 54)
-ImageLabel_5.Image = "http://www.roblox.com/asset/?id=121659512669386"
 
-UICorner_13.Parent = ImageLabel_5
+-- StarterGui.ScreenGui.Frame.TextButton.ImageLabel.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
+G2L["11"]["CornerRadius"] = UDim.new(0, 10);
 
-TextLabel_6.Parent = Frame
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(0.622641504, 0, 0.463855416, 0)
-TextLabel_6.Size = UDim2.new(0, 141, 0, 25)
-TextLabel_6.Font = Enum.Font.SourceSansBold
-TextLabel_6.Text = "Roblox Group"
-TextLabel_6.TextColor3 = Color3.fromRGB(124, 132, 126)
-TextLabel_6.TextSize = 23.000
 
-UICorner_14.CornerRadius = UDim.new(0, 10)
-UICorner_14.Parent = TextLabel_6
+-- StarterGui.ScreenGui.Frame.TextButton.TextLabel
+G2L["12"] = Instance.new("TextLabel", G2L["e"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 20;
+G2L["12"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[Normal version]];
+G2L["12"]["Position"] = UDim2.new(0.0383, 0, 0.58303, 0);
 
-TextLabel_7.Parent = Frame
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(0.626415074, 0, 0.707831323, 0)
-TextLabel_7.Size = UDim2.new(0, 141, 0, 25)
-TextLabel_7.Font = Enum.Font.SourceSansBold
-TextLabel_7.Text = "Roblox Profile"
-TextLabel_7.TextColor3 = Color3.fromRGB(124, 132, 126)
-TextLabel_7.TextSize = 23.000
 
-UICorner_15.CornerRadius = UDim.new(0, 10)
-UICorner_15.Parent = TextLabel_7
+-- StarterGui.ScreenGui.Frame.TextButton.TextLabel
+G2L["13"] = Instance.new("TextLabel", G2L["e"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 15;
+G2L["13"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["TextColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["Size"] = UDim2.new(0, 200, 0, 30);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Free and keyless, supports all executors. Click to execute.]];
+G2L["13"]["Position"] = UDim2.new(0.0383, 0, 0.78924, 0);
 
-copyrobloxgroup.Name = "copyrobloxgroup"
-copyrobloxgroup.Parent = Frame
-copyrobloxgroup.BackgroundColor3 = Color3.fromRGB(34, 255, 0)
-copyrobloxgroup.BorderColor3 = Color3.fromRGB(0, 0, 0)
-copyrobloxgroup.BorderSizePixel = 0
-copyrobloxgroup.Position = UDim2.new(0.888679266, 0, 0.560240984, 0)
-copyrobloxgroup.Size = UDim2.new(0, 42, 0, 32)
-copyrobloxgroup.Font = Enum.Font.SourceSansBold
-copyrobloxgroup.Text = "Copy"
-copyrobloxgroup.TextColor3 = Color3.fromRGB(0, 0, 0)
-copyrobloxgroup.TextSize = 14.000
 
-UICorner_16.Parent = copyrobloxgroup
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["e"]);
 
-copyrobloxprofile.Name = "copyrobloxprofile"
-copyrobloxprofile.Parent = Frame
-copyrobloxprofile.BackgroundColor3 = Color3.fromRGB(34, 255, 0)
-copyrobloxprofile.BorderColor3 = Color3.fromRGB(0, 0, 0)
-copyrobloxprofile.BorderSizePixel = 0
-copyrobloxprofile.Position = UDim2.new(0.888679266, 0, 0.810240984, 0)
-copyrobloxprofile.Size = UDim2.new(0, 42, 0, 32)
-copyrobloxprofile.Font = Enum.Font.SourceSansBold
-copyrobloxprofile.Text = "Copy"
-copyrobloxprofile.TextColor3 = Color3.fromRGB(0, 0, 0)
-copyrobloxprofile.TextSize = 14.000
 
-UICorner_17.Parent = copyrobloxprofile
 
-ImageLabel_6.Parent = Frame
-ImageLabel_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_6.BorderSizePixel = 0
-ImageLabel_6.Position = UDim2.new(0.356603771, 0, 0.656626523, 0)
-ImageLabel_6.Size = UDim2.new(0, 57, 0, 54)
-ImageLabel_6.Image = "rbxassetid://97843518275001"
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["15"] = Instance.new("TextButton", G2L["2"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["Size"] = UDim2.new(0, 235, 0, 180);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[]];
+G2L["15"]["Position"] = UDim2.new(0.51055, 0, 0.28753, 0);
 
-UICorner_18.Parent = ImageLabel_6
 
-copyshirtlink.Name = "copyshirtlink"
-copyshirtlink.Parent = Frame
-copyshirtlink.BackgroundColor3 = Color3.fromRGB(34, 255, 0)
-copyshirtlink.BorderColor3 = Color3.fromRGB(0, 0, 0)
-copyshirtlink.BorderSizePixel = 0
-copyshirtlink.Position = UDim2.new(0.490566045, 0, 0.686747015, 0)
-copyshirtlink.Size = UDim2.new(0, 42, 0, 32)
-copyshirtlink.Font = Enum.Font.SourceSansBold
-copyshirtlink.Text = "Copy"
-copyshirtlink.TextColor3 = Color3.fromRGB(0, 0, 0)
-copyshirtlink.TextSize = 14.000
+-- StarterGui.ScreenGui.Frame.TextButton.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["15"]);
+G2L["16"]["CornerRadius"] = UDim.new(0, 10);
 
-UICorner_19.Parent = copyshirtlink
 
-local function copyToClipboard(text)
-    setclipboard(text)
-end
+-- StarterGui.ScreenGui.Frame.TextButton.ImageLabel
+G2L["17"] = Instance.new("ImageLabel", G2L["15"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["Image"] = [[rbxassetid://129095123808252]];
+G2L["17"]["Size"] = UDim2.new(0, 221, 0, 113);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["BackgroundTransparency"] = 1;
+G2L["17"]["Position"] = UDim2.new(0.03, 0, 0.027, 0);
 
-copydiscord.MouseButton1Click:Connect(function()
-    local discordLink = "https://discord.gg/PrYAhPA2xp" 
-    copyToClipboard(discordLink)
-end)
 
-copyrobloxgroup.MouseButton1Click:Connect(function()
-    local robloxGroupLink = "https://www.roblox.com/pl/communities/35289663/Sander-X-Team#!/about" 
-    copyToClipboard(robloxGroupLink)
-end)
-copyrobloxprofile.MouseButton1Click:Connect(function()
-    local robloxProfileLink = "https://www.roblox.com/pl/users/3016844381/profile" 
-    copyToClipboard(robloxProfileLink)
-end)
-copyshirtlink.MouseButton1Click:Connect(function()
-    local copyshirtlink = "https://www.roblox.com/pl/catalog/80680383943488/Sander-X-SanderDev-Shirt" 
-    copyToClipboard(copyshirtlink)
-end)
+-- StarterGui.ScreenGui.Frame.TextButton.ImageLabel.UICorner
+G2L["18"] = Instance.new("UICorner", G2L["17"]);
+G2L["18"]["CornerRadius"] = UDim.new(0, 10);
 
-executesanderxnormal.MouseButton1Click:Connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/NormalSS.lua'))()
-end)
 
-executesanderxvip.MouseButton1Click:Connect(function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/SanderXVip.lua'))()
-end)
+-- StarterGui.ScreenGui.Frame.TextButton.TextLabel
+G2L["19"] = Instance.new("TextLabel", G2L["15"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 20;
+G2L["19"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[Paid version]];
+G2L["19"]["Position"] = UDim2.new(0.0383, 0, 0.58303, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.TextLabel
+G2L["1a"] = Instance.new("TextLabel", G2L["15"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 15;
+G2L["1a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["Size"] = UDim2.new(0, 219, 0, 30);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Paid but cheap and includes OP features. Click to execute.]];
+G2L["1a"]["Position"] = UDim2.new(0.0383, 0, 0.78924, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["15"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["1c"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1c"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[Sander X panel was made by dnezero. The rest of Sander X was made by SanderDev/WojtesDev.]];
+G2L["1c"]["Position"] = UDim2.new(0, 0, 1.01894, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["1d"] = Instance.new("TextButton", G2L["2"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["Size"] = UDim2.new(0, 235, 0, 102);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[]];
+G2L["1d"]["Position"] = UDim2.new(0.02161, 0, 0.74101, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.UICorner
+G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
+G2L["1e"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.ImageLabel
+G2L["1f"] = Instance.new("ImageLabel", G2L["1d"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["Image"] = [[rbxassetid://16884179038]];
+G2L["1f"]["ImageRectSize"] = Vector2.new(108, 108);
+G2L["1f"]["Size"] = UDim2.new(0, 75, 0, 75);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["1f"]["ImageRectOffset"] = Vector2.new(798, 330);
+G2L["1f"]["Position"] = UDim2.new(0.61277, 0, 0.12745, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.TextLabel
+G2L["20"] = Instance.new("TextLabel", G2L["1d"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 20;
+G2L["20"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[Roblox group]];
+G2L["20"]["Position"] = UDim2.new(0.02979, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.TextLabel
+G2L["21"] = Instance.new("TextLabel", G2L["1d"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextSize"] = 15;
+G2L["21"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["21"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["TextColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["21"]["BackgroundTransparency"] = 1;
+G2L["21"]["Size"] = UDim2.new(0, 126, 0, 50);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[Click to copy the group link to the clipboard.]];
+G2L["21"]["Position"] = UDim2.new(0.02979, 0, 0.37255, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["22"] = Instance.new("LocalScript", G2L["1d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["23"] = Instance.new("TextButton", G2L["2"]);
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["Size"] = UDim2.new(0, 235, 0, 102);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[]];
+G2L["23"]["Position"] = UDim2.new(0.50884, 0, 0.73861, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.UICorner
+G2L["24"] = Instance.new("UICorner", G2L["23"]);
+G2L["24"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.ImageLabel
+G2L["25"] = Instance.new("ImageLabel", G2L["23"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["Image"] = [[rbxassetid://16884179279]];
+G2L["25"]["ImageRectSize"] = Vector2.new(54, 54);
+G2L["25"]["Size"] = UDim2.new(0, 75, 0, 75);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["BackgroundTransparency"] = 1;
+G2L["25"]["ImageRectOffset"] = Vector2.new(634, 814);
+G2L["25"]["Position"] = UDim2.new(0.61277, 0, 0.12745, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.TextLabel
+G2L["26"] = Instance.new("TextLabel", G2L["23"]);
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextSize"] = 20;
+G2L["26"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundTransparency"] = 1;
+G2L["26"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[Roblox shirt]];
+G2L["26"]["Position"] = UDim2.new(0.02979, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.TextLabel
+G2L["27"] = Instance.new("TextLabel", G2L["23"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextSize"] = 15;
+G2L["27"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["27"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27"]["TextColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["27"]["BackgroundTransparency"] = 1;
+G2L["27"]["Size"] = UDim2.new(0, 126, 0, 58);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[Needed for paid version. Click to copy link to the clipboard.]];
+G2L["27"]["Position"] = UDim2.new(0.02979, 0, 0.37255, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["28"] = Instance.new("LocalScript", G2L["23"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Smooth GUI Dragging
+G2L["29"] = Instance.new("LocalScript", G2L["2"]);
+G2L["29"]["Name"] = [[Smooth GUI Dragging]];
+
+
+-- StarterGui.ScreenGui.Frame.LocalScript
+G2L["2a"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+local function C_7()
+local script = G2L["7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end;
+task.spawn(C_7);
+-- StarterGui.ScreenGui.Frame.TextLabel.LocalScript
+local function C_9()
+local script = G2L["9"];
+	script.Parent.Text = "Hello, " .. game.Players.LocalPlayer.Name
+end;
+task.spawn(C_9);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_d()
+local script = G2L["d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard("https://discord.gg/vQcJfZf2")
+	end)
+end;
+task.spawn(C_d);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_14()
+local script = G2L["14"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+          game:GetService("StarterGui"):SetCore("SendNotification", {
+      Title = "Sander X Normal Loading",
+      Text = "Wait.....",
+      Duration = 10
+  })
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/NormalSS.lua'))()
+	end)
+end;
+task.spawn(C_14);
+
+local function C_1b()
+local script = G2L["1b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+          game:GetService("StarterGui"):SetCore("SendNotification", {
+      Title = "Sander X Vip Loading",
+      Text = "Wait.....",
+      Duration = 10
+  })
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/SanderXVip.lua'))()
+	end)
+end;
+task.spawn(C_1b);
+
+local function C_22()
+local script = G2L["22"];
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard("https://www.roblox.com/pl/communities/35289663/Sander-X-Team#!/about")
+	end)
+end;
+task.spawn(C_22);
+
+local function C_28()
+local script = G2L["28"];
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard("https://www.roblox.com/pl/catalog/80680383943488/Sander-X-SanderDev-Shirt")
+	end)
+end;
+task.spawn(C_28);
+
+local function C_29()
+local script = G2L["29"];
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end;
+task.spawn(C_29);
+
+local function C_2a()
+local script = G2L["2a"];
+	local frame = script.Parent
+	local screenGui = frame.Parent
+	
+	if not screenGui:IsA("ScreenGui") then
+		error("The Frame must be parented to a ScreenGui.")
+	end
+	
+
+	frame.AnchorPoint = Vector2.new(0.5, 0.5) 
+	frame.Position = UDim2.new(0.5, 0, 0.5, 0) 
+end;
+task.spawn(C_2a);
+
+return G2L["1"], require;
