@@ -1,4 +1,4 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/kigredns/testUIDK/refs/heads/main/SafeLogs.lua")))()
+
 local TweenService = game:GetService("TweenService")
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
